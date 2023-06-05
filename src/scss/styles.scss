@@ -1,0 +1,131 @@
+@use "_reset.scss";
+@import "_variables";
+@import "_mixins";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f5f5f5;
+  height: 100vh;
+  width: 100vw;
+  padding: 0 15vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #315e7a;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  z-index: 1;
+  border-bottom: 1px solid #315e7a;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 86%;
+  li {
+    font-size: 17px;
+    padding: 10px;
+    margin-right: 7px;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  padding-top: 35px;
+  margin-top: 5vw;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 4fr 4fr;
+  grid-auto-rows: 1fr;
+  aside {
+    color: #315e7a;
+
+    &:first-child {
+      div {
+        &:first-child {
+          opacity: 0.9;
+          h1 {
+            font-size: 90px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &:last-child {
+              margin-top: -40px;
+            }
+          }
+        }
+        &:last-child {
+          margin-top: 20px;
+          font-size: 40px;
+          font-weight: lighter;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  section {
+    color: #777777;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+    article {
+      overflow: hidden;
+      background-color: white;
+      border-radius: 24px;
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100px;
+          height: 150px;
+          object-fit: cover;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          font-size: 17px;
+          padding: 0 30px;
+          letter-spacing: 1.5px;
+          span {
+            margin-bottom: 12px;
+          }
+        }
+      }
+      &:last-child {
+        grid-column: span 2;
+      }
+    }
+    &:last-child {
+      background-color: aqua;
+      article {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 30px;
+          padding: 30px 0;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
