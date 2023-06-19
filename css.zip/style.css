@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import "./root.css";
 
 * {
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 a {
   text-decoration: none;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #3e2020;
   height: 100vh;
   width: 100%;
-  padding: 0 20vw;
+  background-color: var(--bg);
 }
 /* ############# Header ############# */
 header {
@@ -20,50 +21,53 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  color: #315e7a;
-  padding: 0px 0;
-  background-color: #f5f5f5;
   z-index: 99;
-  border-bottom: 1px solid #315e7a;
+  border-bottom: 1px solid var(--fz);
   padding: 10px 20vw;
   font-size: 21px;
+  color: var(--fz);
+  background-color: var(--bg);
 }
 header nav {
-  border: 1px solid #0dd52e;
   display: flex;
   align-items: center;
+}
+header nav h1 {
+  line-height: 1.1em;
+  letter-spacing: 0.5px;
 }
 header ul {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  border: 1px solid red;
 }
 header ul li {
-  border: 1px solid blue;
-  font-size: 20px;
-  padding: 15 10px;
-  margin-left: 7px;
+  font-size: 18px;
+  padding: 0 10px;
+  font-weight: 600;
 }
 
 /* ############# Main ############# */
-main {
+.main {
+  padding: 0 20vw;
   width: 100%;
-  padding-top: 35px;
-  margin-top: 5vw;
+  padding-top: 135px;
+  /* margin-top: 5vw; */
   display: grid;
   gap: 1vw;
-  grid-template-columns: 12vw 22vw 25vw;
+  grid-template-columns: 12vw 22vw 23vw;
+
+  /* height: 100vh; */
 }
 /* ############# Aside ############# */
 main aside {
-  color: #315e7a;
+  color: var(--fz);
 }
 .title_en {
   opacity: 0.9;
 }
 .title_en h1 {
-  font-size: 90px;
+  font-size: 91px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -85,8 +89,9 @@ main aside {
 }
 .bg {
   overflow: hidden;
-  background-color: white;
+  background-color: #fdfcff;
   border-radius: 24px;
+  box-shadow: 0 0 0 0 #000, 0 0 2px rgba(0, 0, 0, 0.5);
 }
 .profile {
   display: flex;
@@ -112,14 +117,18 @@ main aside {
   font-weight: bolder;
   margin-bottom: 10px;
 }
+.profile_name p {
+  opacity: 0.6;
+  font-size: 15px;
+}
 .profile_info {
   display: flex;
-  background-color: #f5f5f5;
+  background-color: var(--bg);
   border-radius: 24px;
   margin: 15px 0;
   padding: 18px 15px;
   gap: 30px;
-  color: #373737;
+  color: #373737ef;
 }
 .profile_info li {
   display: flex;
@@ -130,9 +139,11 @@ main aside {
 .profile_info li i {
   display: block;
   margin-bottom: 6px;
+  opacity: 0.9;
 }
 .profile_info li span {
   font-size: 15px;
+  color: var(--text);
 }
 .profile_call ul {
   width: 100%;
@@ -144,11 +155,138 @@ main aside {
   gap: 30px;
 }
 .profile_call ul li a {
-  color: #333;
+  color: #333333d8;
   text-decoration: none;
 }
 .profile_call ul li span {
   margin-top: 15px;
   font-size: 12px;
   display: block;
+}
+.introduce {
+  margin-top: 25px;
+}
+.introduce_inner {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  line-height: 1.5em;
+  height: 40vh;
+}
+.introduce_inner h2,
+.skill_inner h2 {
+  color: var(--fz);
+  font-size: 17px;
+  font-weight: bold;
+}
+.introduce_inner p {
+  color: #6c6b6b;
+  line-height: 1.7em;
+}
+.introduce_plan {
+}
+.introduce_plan h2 {
+  margin-bottom: 10px;
+}
+.introduce_inner ul {
+}
+.introduce_inner ul li {
+  padding: 3px 0;
+  color: var(--text);
+}
+.introduce_inner ul li span {
+  color: var(--text);
+  margin-left: 10px;
+}
+
+.introduce_skill {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.introduce_skill span {
+  color: var(--fz);
+  border: 1px solid var(--fz);
+  border-radius: 24px;
+  padding: 3px 6px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.skill {
+  height: 67.5vh;
+  position: relative;
+}
+.skill_inner {
+  padding: 15px 20px;
+}
+.skill_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.skill_title .fa {
+  opacity: 0.7;
+  padding: 0 15px;
+}
+.skill h2 {
+  padding: 15px 0;
+}
+.skill ul {
+}
+.skill ul li {
+  padding: 30px 0;
+  /* border: 1px solid #00ff00; */
+}
+.skill ul li h5 {
+  padding-bottom: 20px;
+}
+.skill ul li h5 i {
+  margin-right: 7px;
+}
+.fa-html5 {
+  color: #e4603e;
+}
+.fa-css3-alt {
+  color: #42a5f5;
+}
+.fa-sass {
+  color: #eb5587;
+}
+.fa-js {
+  color: #ffca28;
+}
+.skill ul li h5 span {
+  color: #232323;
+  opacity: 0.9;
+}
+.skill ul li p {
+  color: var(--text);
+}
+
+footer {
+  background-color: var(--fz);
+  opacity: 0.93;
+  margin-top: 70px;
+  height: 110px;
+  width: 100%;
+}
+.footer_inner {
+  padding: 10px 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+.footer_inner nav {
+  width: 15%;
+}
+.footer_inner nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }

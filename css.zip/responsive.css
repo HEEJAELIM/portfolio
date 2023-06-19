@@ -1,18 +1,24 @@
 @media (max-width: 768px) {
   body {
-    padding: 0 8vw;
   }
   header {
     padding: 10px 0;
   }
-  main {
+  header ul li {
+    font-size: 17px;
+    padding: 0 5px;
+  }
+  .main {
     display: grid;
     gap: 1vw;
     grid-template-columns: 1fr;
+    padding: 0 10vw;
+    padding-top: 90px;
   }
   .pro {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 30px;
   }
   .profile_call ul {
     display: flex;
@@ -21,5 +27,94 @@
     align-items: center;
     gap: 60px;
     padding: 15px;
+  }
+  .introduce_inner {
+    height: 100%;
+  }
+  .skill {
+    height: 100%;
+    position: relative;
+    margin-top: 25px;
+  }
+  .footer_inner {
+  }
+  .footer_inner nav ul li {
+    margin-right: 10px;
+  }
+  /* ################ project.style ################ */
+  .website-inner {
+    width: 100%;
+  }
+
+  .website-inner h1 {
+    font-size: 30px;
+    padding: 50px 0 10px 0;
+  }
+
+  /* webtab-content */
+  .content-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* webtab-btn */
+  .web-tab-btn label {
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 17px;
+  }
+
+  /* webtabs */
+  .web-tab .tab-inner {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 20px;
+  }
+  .web-tab:nth-child(even) .tab-inner {
+    flex-direction: column;
+  }
+
+  /* tab-info */
+  .tab-info {
+    padding: 0 10px;
+  }
+
+  .webtab-btn label {
+    text-align: center;
+  }
+
+  .tab-info h3 {
+    font-size: 20px;
+    padding-bottom: 23px;
+  }
+
+  .tab-info span {
+    line-height: 2em;
+  }
+
+  .tab-inner span em {
+    padding-left: 35px;
+  }
+
+  .tab-info span b {
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+    border-radius: 2px;
+  }
+
+  .tab-info p {
+    width: unset;
+    margin-bottom: 10px;
+  }
+
+  /* web photo */
+  .web-photo {
+    width: 100%;
+    height: 250px;
+  }
+
+  .result-buttons {
+    text-align: center;
   }
 }
