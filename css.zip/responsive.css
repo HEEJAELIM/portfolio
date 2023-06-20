@@ -42,36 +42,43 @@
     margin-right: 10px;
   }
   /* ################ project.style ################ */
+
   .website-inner {
     width: 100%;
+    padding: 0;
+    height: 1120px;
   }
-
   .website-inner h1 {
-    font-size: 30px;
-    padding: 50px 0 10px 0;
+    font-size: 25px;
+    padding: 100px 0 20px 0;
   }
 
   /* webtab-content */
   .content-inner {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 40px;
   }
 
   /* webtab-btn */
   .web-tab-btn label {
     text-align: center;
     line-height: 1.8em;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   /* webtabs */
+  .web-tab {
+    width: 93%;
+  }
+  .web-tabs {
+    width: 86%;
+  }
   .web-tab .tab-inner {
     flex-direction: column;
     gap: 50px;
-    padding: 0 20px;
-  }
-  .web-tab:nth-child(even) .tab-inner {
-    flex-direction: column;
+    width: 86%;
+    /* padding: 0 20px; */
   }
 
   /* tab-info */
@@ -84,37 +91,33 @@
   }
 
   .tab-info h3 {
-    font-size: 20px;
-    padding-bottom: 23px;
+    font-size: 22px;
+    padding-bottom: 5px;
   }
 
   .tab-info span {
     line-height: 2em;
   }
 
-  .tab-inner span em {
-    padding-left: 35px;
-  }
-
-  .tab-info span b {
-    width: 15px;
-    height: 15px;
-    margin-left: 3px;
-    border-radius: 2px;
-  }
-
   .tab-info p {
     width: unset;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .tab-info li {
+    font-size: 12px;
   }
 
   /* web photo */
   .web-photo {
     width: 100%;
-    height: 250px;
+    height: 230px;
   }
 
   .result-buttons {
     text-align: center;
+  }
+  .study-inner {
+    height: 900px;
   }
 }

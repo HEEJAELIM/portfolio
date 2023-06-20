@@ -60,7 +60,7 @@ header ul li {
   /* height: 100vh; */
 }
 /* ############# Aside ############# */
-main aside {
+.main aside {
   color: var(--fz);
 }
 .title_en {
@@ -195,6 +195,11 @@ main aside {
 .introduce_inner ul li {
   padding: 3px 0;
   color: var(--text);
+}
+.introduce_inner ul li::before {
+  content: "\f105";
+  font-family: fontawesome;
+  color: var(--fz);
 }
 .introduce_inner ul li span {
   color: var(--text);

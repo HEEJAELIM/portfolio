@@ -1,54 +1,85 @@
-    <div class="container">
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- scss use -->
+    <!-- <link rel="stylesheet" href="dest/css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="dest/css/styles.css" /> -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <!-- featherlight.js -->
+    <script src="./js/featherlight/featherlight.js"></script>
+    <link rel="stylesheet" href="./js/featherlight/featherlight.css" />
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/6478f529f2.js"></script>
+    <!-- css use -->
+    <link rel="stylesheet" href="./css.zip/reset.css" />
+    <link rel="stylesheet" href="./css.zip/style.css" />
+    <link rel="stylesheet" href="./css.zip/project_style.css" />
+    <link rel="stylesheet" href="./css.zip/responsive.css" />
+    <title>heejae's project</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"><h1>Heejae's portfolio</h1></a>
+        <ul>
+          <li>
+            <a href="index.html"><span>자기소개</span></a>
+          </li>
+          <li>
+            <a href="project.html"><span>프로젝트</span></a>
+          </li>
+          <li>
+            <a href="study.html"><span>공부</span></a>
+          </li>
+          <li>
+            <a
+              href="https://www.notion.so/heejae02/78d1439b0d394ed28f2417951b28fdc3"
+              target="_blank"
+              ><span>노트</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <section class="website">
-        <div class="website-inner">
+        <div class="website-inner study-inner">
           <h1>Website Publishing</h1>
           <div class="content-inner">
             <input type="radio" name="weblist" id="web-tab1" checked="" />
             <input type="radio" name="weblist" id="web-tab2" />
             <input type="radio" name="weblist" id="web-tab3" />
             <input type="radio" name="weblist" id="web-tab4" />
-            <input type="radio" name="weblist" id="web-tab5" />
-            <input type="radio" name="weblist" id="web-tab6" />
             <div class="web-tab-btn">
-              <label for="web-tab1">make everything</label>
-              <label for="web-tab2">we are experts</label>
-              <label for="web-tab3">our seasonal collection</label>
-              <label for="web-tab4">music show</label>
-              <label for="web-tab5">live music</label>
-              <label for="web-tab6">live music</label>
+              <label for="web-tab1">wetube</label>
+              <label for="web-tab2">js_write</label>
+              <label for="web-tab3">draw</label>
+              <label for="web-tab4">slide_mini</label>
             </div>
             <div class="web-tabs">
               <div class="web-tab">
                 <div class="tab-inner">
                   <div class="web-photo">
-                    <img src="images/website-thum-01.jpg" />
+                    <img src="img/wetube.png" />
                   </div>
                   <div class="tab-info">
-                    <h3>make everything</h3>
+                    <h3>wetube</h3>
                     <p>
-                      사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게
-                      UI/UX 구조설계를 진행하였습니다. 그리고 기존 사이트에서
-                      반응형 페이지가 될수 있도록 제작했습니다.
+                      router, pug 등을 공부하기 위해 제작했습니다. 기본적인
+                      회원가입, 로그인, 비디오 업로드 및 삭제만 구현했습니다.
                     </p>
                     <ul>
-                      <li>UI 디자인 방식: Photoshop</li>
-                      <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                      <li>레이아웃 제작방식 : CSS Grid &amp; Flex</li>
-                      <li>플러그인: Slick slider</li>
-                      <li>제작 참여율: 100%</li>
+                      <li>퍼블리싱 제작방식 : PUG</li>
+                      <li>레이아웃 제작방식 : CSS MVPsytle</li>
                     </ul>
                     <div class="result-buttons">
                       <a
                         class="btn"
-                        href="portfolio/website-publishing/01/index.html"
+                        href="./portfoilo/study/wetube/src/init.js"
                         data-featherlight="iframe"
-                        >PC Ver.</a
-                      >
-                      <a
-                        class="btn mobile"
-                        href="portfolio/website-publishing/website-publishing-mockup-01.html"
-                        data-featherlight="iframe"
-                        >Mobile Ver.</a
+                        >Page</a
                       >
                     </div>
                   </div>
@@ -57,34 +88,24 @@
               <div class="web-tab">
                 <div class="tab-inner">
                   <div class="web-photo">
-                    <img src="images/website-thum-02.jpg" />
+                    <img src="img/js_wirte.png" />
                   </div>
                   <div class="tab-info">
-                    <h3>we are experts</h3>
+                    <h3>js_write</h3>
                     <p>
-                      사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게
-                      UI/UX 구조설계를 진행하였습니다. 그리고 기존 사이트에서
-                      반응형 페이지가 될수 있도록 제작했습니다.
+                      localStorage를 이용하여 로그인 저장 및 리스트 저장을
+                      만들을 만들고 시계 또한 같이 만들었습니다.
                     </p>
                     <ul>
-                      <li>UI 디자인 방식: Photoshop</li>
-                      <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                      <li>레이아웃 제작방식 : CSS Grid &amp; Flex</li>
-                      <li>플러그인: Slick slider</li>
-                      <li>제작 참여율: 100%</li>
+                      <li>퍼블리싱 제작방식 : HTML + CSS</li>
+                      <li>레이아웃 제작방식 : CSS nomalize</li>
                     </ul>
                     <div class="result-buttons">
                       <a
                         class="btn"
-                        href="portfolio/website-publishing/02/index.html"
+                        href="./portfoilo/study/js_wirte/index.html"
                         data-featherlight="iframe"
-                        >PC Ver.</a
-                      >
-                      <a
-                        class="btn mobile"
-                        href="portfolio/website-publishing/website-publishing-mockup-02.html"
-                        data-featherlight="iframe"
-                        >Mobile Ver.</a
+                        >Page</a
                       >
                     </div>
                   </div>
@@ -93,34 +114,24 @@
               <div class="web-tab">
                 <div class="tab-inner">
                   <div class="web-photo">
-                    <img src="images/website-thum-03.jpg" />
+                    <img src="img/draw.png" />
                   </div>
                   <div class="tab-info">
-                    <h3>our seasonal collection</h3>
+                    <h3>draw</h3>
                     <p>
-                      사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게
-                      UI/UX 구조설계를 진행하였습니다. 그리고 기존 사이트에서
-                      반응형 페이지가 될수 있도록 제작했습니다.
+                      JAVASCRIPT만을 사용하여 마우스를 이용한 그림판을
+                      만들어봤습니다.
                     </p>
                     <ul>
-                      <li>UI 디자인 방식: Photoshop</li>
-                      <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                      <li>레이아웃 제작방식 : CSS Grid &amp; Flex</li>
-                      <li>플러그인: Slick slider</li>
-                      <li>제작 참여율: 100%</li>
+                      <li>퍼블리싱 제작방식 : HTML + CSS</li>
+                      <li>레이아웃 제작방식 : CSS nomalize</li>
                     </ul>
                     <div class="result-buttons">
                       <a
                         class="btn"
-                        href="portfolio/website-publishing/03/index.html"
+                        href="./portfoilo/study/draw/index.html"
                         data-featherlight="iframe"
-                        >PC Ver.</a
-                      >
-                      <a
-                        class="btn mobile"
-                        href="portfolio/website-publishing/website-publishing-mockup-03.html"
-                        data-featherlight="iframe"
-                        >Mobile Ver.</a
+                        >Page</a
                       >
                     </div>
                   </div>
@@ -129,106 +140,24 @@
               <div class="web-tab">
                 <div class="tab-inner">
                   <div class="web-photo">
-                    <img src="images/website-thum-04.jpg" />
+                    <img src="img/slide_mini.png" />
                   </div>
                   <div class="tab-info">
-                    <h3>music show</h3>
+                    <h3>slide_mini</h3>
                     <p>
-                      사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게
-                      UI/UX 구조설계를 진행하였습니다. 그리고 기존 사이트에서
-                      반응형 페이지가 될수 있도록 제작했습니다.
+                      순수 CSS만을 사용하여 가벼운 이미지 슬라이드를
+                      만들었습니다.
                     </p>
                     <ul>
-                      <li>UI 디자인 방식: Photoshop</li>
-                      <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                      <li>레이아웃 제작방식 : CSS Grid &amp; Flex</li>
-                      <li>플러그인: Slick slider</li>
-                      <li>제작 참여율: 100%</li>
+                      <li>퍼블리싱 제작방식 : HTML + CSS</li>
+                      <li>레이아웃 제작방식 : CSS</li>
                     </ul>
                     <div class="result-buttons">
                       <a
                         class="btn"
-                        href="portfolio/website-publishing/04/index.html"
+                        href="./portfoilo/study/slide_mini/index.html"
                         data-featherlight="iframe"
-                        >PC Ver.</a
-                      >
-                      <a
-                        class="btn mobile"
-                        href="portfolio/website-publishing/website-publishing-mockup-04.html"
-                        data-featherlight="iframe"
-                        >Mobile Ver.</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="web-tab">
-                <div class="tab-inner">
-                  <div class="web-photo">
-                    <img src="images/website-thum-05.jpg" />
-                  </div>
-                  <div class="tab-info">
-                    <h3>live music</h3>
-                    <p>
-                      사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게
-                      UI/UX 구조설계를 진행하였습니다. 그리고 기존 사이트에서
-                      반응형 페이지가 될수 있도록 제작했습니다.
-                    </p>
-                    <ul>
-                      <li>UI 디자인 방식: Photoshop</li>
-                      <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                      <li>레이아웃 제작방식 : CSS Grid &amp; Flex</li>
-                      <li>플러그인: Slick slider</li>
-                      <li>제작 참여율: 100%</li>
-                    </ul>
-                    <div class="result-buttons">
-                      <a
-                        class="btn"
-                        href="portfolio/website-publishing/05/index.html"
-                        data-featherlight="iframe"
-                        >PC Ver.</a
-                      >
-                      <a
-                        class="btn mobile"
-                        href="portfolio/website-publishing/website-publishing-mockup-05.html"
-                        data-featherlight="iframe"
-                        >Mobile Ver.</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="web-tab">
-                <div class="tab-inner">
-                  <div class="web-photo">
-                    <img src="images/website-thum-06.jpg" />
-                  </div>
-                  <div class="tab-info">
-                    <h3>live music</h3>
-                    <p>
-                      사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게
-                      UI/UX 구조설계를 진행하였습니다. 그리고 기존 사이트에서
-                      반응형 페이지가 될수 있도록 제작했습니다.
-                    </p>
-                    <ul>
-                      <li>UI 디자인 방식: Photoshop</li>
-                      <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                      <li>레이아웃 제작방식 : CSS Grid &amp; Flex</li>
-                      <li>플러그인: Slick slider</li>
-                      <li>제작 참여율: 100%</li>
-                    </ul>
-                    <div class="result-buttons">
-                      <a
-                        class="btn"
-                        href="portfolio/website-publishing/06/index.html"
-                        data-featherlight="iframe"
-                        >PC Ver.</a
-                      >
-                      <a
-                        class="btn mobile"
-                        href="portfolio/website-publishing/website-publishing-mockup-06.html"
-                        data-featherlight="iframe"
-                        >Mobile Ver.</a
+                        >Page</a
                       >
                     </div>
                   </div>
@@ -238,4 +167,30 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
+    <footer>
+      <div class="footer_inner">
+        <span>임희재 | 포트폴리오</span>
+        <nav>
+          <ul>
+            <li>
+              <a href="tel:01025835592"
+                ><i class="fas fa-phone-alt fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/HEEJAELIM/" target="_blank"
+                ><i class="fab fa-github fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:heejae0529@naver.com"
+                ><i class="fas fa-at fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
