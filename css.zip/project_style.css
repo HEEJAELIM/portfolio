@@ -127,7 +127,8 @@ input[id="web-tab3"]:checked ~ .web-tab-btn label[for="web-tab3"],
 input[id="web-tab4"]:checked ~ .web-tab-btn label[for="web-tab4"],
 input[id="web-tab5"]:checked ~ .web-tab-btn label[for="web-tab5"],
 input[id="web-tab6"]:checked ~ .web-tab-btn label[for="web-tab6"],
-input[id="web-tab7"]:checked ~ .web-tab-btn label[for="web-tab7"] {
+input[id="web-tab7"]:checked ~ .web-tab-btn label[for="web-tab7"],
+input[id="web-tab8"]:checked ~ .web-tab-btn label[for="web-tab8"] {
   text-decoration: underline;
   text-decoration-color: var(--fz);
   text-decoration-thickness: 2px;
@@ -138,7 +139,8 @@ input[id="web-tab3"]:checked ~ .web-tabs .web-tab:nth-child(3),
 input[id="web-tab4"]:checked ~ .web-tabs .web-tab:nth-child(4),
 input[id="web-tab5"]:checked ~ .web-tabs .web-tab:nth-child(5),
 input[id="web-tab6"]:checked ~ .web-tabs .web-tab:nth-child(6),
-input[id="web-tab7"]:checked ~ .web-tabs .web-tab:nth-child(7) {
+input[id="web-tab7"]:checked ~ .web-tabs .web-tab:nth-child(7),
+input[id="web-tab8"]:checked ~ .web-tabs .web-tab:nth-child(8) {
   opacity: 1;
   visibility: visible;
 }

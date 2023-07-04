@@ -31,6 +31,13 @@
   .introduce_inner {
     height: 100%;
   }
+  .introduce_skill span {
+    margin-top: 10px;
+    border-radius: 16px;
+    padding: 2px 4px;
+    font-size: 8px;
+    text-align: center;
+  }
   .skill {
     height: 100%;
     position: relative;
